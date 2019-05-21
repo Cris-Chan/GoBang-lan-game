@@ -1,0 +1,139 @@
+canvas {
+            display: block;
+            box-shadow: -2px -2px 2px #EFEFEF, 5px 5px 5px #B9B9B9;
+        }
+
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #303030;
+  color: white;
+}
+.text{
+  font-family: 'Quicksand', sans-serif;
+}
+
+.teambut{
+  margin-top: 1%;
+  padding: 1%;
+}
+
+#player1{
+	position:absolute; left: 700px; top:130px;
+  font-family: 'Quicksand', sans-serif;
+}
+#player2{
+	position:absolute; left: 700px; top:400px;
+  font-family: 'Quicksand', sans-serif;
+}
+#player1win{
+
+}
+
+div.player {
+/* background-color: #ffffff; */
+}
+div.player span {
+font-family: 'Quicksand', sans-serif;
+font-size: 48px;
+font-style: normal;
+font-weight: normal;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+
+*{padding:0px;margin:0px;}
+.buttomtitle{width:280px;height:150px;background:url(../resources/toptitle.png) no-repeat;background-position:bottom;background-position:left;}
+
+/* accordion_container */
+.accordion_container{
+	/* margin:0 auto; */
+  border-radius: 25px;
+  margin: 5%;
+	float:right;
+	float:top;
+	width:280px;
+
+}
+.accordion_container .content, .accordion_container .tab{
+	width:260px;
+
+}
+.accordion_container .tab{
+	background:#fafafa;
+	height:30px;
+	float:left;
+
+}
+.accordion_container .tab a:hover{
+	color:#F00;
+	text-decoration:underline;
+}
+.accordion_container .tab a{
+	color:#4B7196;
+	text-decoration:none;
+}
+a{color:inherit}
+.accordion_container .tab span{float:left;margin-top:10px;}
+.accordion_container .tab strong{ margin-left:15px;float:left;margin-top:10px;}
+.accordion_container .tab{
+	padding:10px;
+
+}
+
+.accordion_container .content{
+	width:280px;
+	height:120px;
+	width:280px;
+}
+.accordion_container .content img{
+	display:block;
+	width:100px;
+	height:100px;
+	float:left;
+	margin:10px;
+}
+.accordion_container .first{
+	z-index:5;
+	top:0px;
+}
+.accordion_container .second{
+	z-index:4;
+	top:49px;
+}
+.accordion_container .third{
+	z-index:3;
+	top:98px;
+}
+.accordion_container .four{
+	z-index:2;
+	top:147px;
+}
+.accordion_container .file{
+	z-index:1;
+	top:196px;
+}
+.accordion{
+	position:relative;
+	overflow:hidden;
+	height:400px;
+}
+.accordion > div{
+	position:absolute;
+	left:0px;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+	left:-1px;
+	cursor:pointer;
+	background-color:#FFF;
+	width:280px;
+}
+.hide{
+}
+.word{width:130px;height:80px;float:right;margin-top:25px;margin-right:20px;text-decoration:none;}
+.word p a{ color:#4B7196;line-height:20px;text-decoration:none;}
+.word p a:hover{
+	color:#F00;
+	text-decoration:none;
+}

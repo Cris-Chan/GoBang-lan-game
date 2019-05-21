@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gobang Chess</title>
+    <style type="text/css">
+        body
+        {
+            margin: 10px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="resources/style.css">
+
+    <script type="text/javascript" src="resources/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/j-accordin.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.accordion').jaccordion();
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div style=" background: url(resources/background.jpg) no-repeat;">
+
+    <div class="accordion_container">
+
+    <div class="buttomtitle"></div>
+
+    <div class="accordion">
+
+        <div class="first current">
+            <div class="content">
+                <img src="resources/trophy.jpg" />
+                <div class="word" >
+                    <p>Wins：<em style="color:#F00;"><strong>6088</strong></em></p><br />
+                    <p><a href="#">Congratulations!</a></p>
+                </div>
+            </div>
+            <div class="tab">
+                <span><img src="resources/tea1.jpg" /></span>
+                <strong><a href="#" target="_blank">Dr.Prather</a></strong>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="content second">
+                <a href="#" target="_blank"><img src="resources/trophy2.jpeg" /></a>
+                <div class="word" >
+                    <p>Wins：<em style="color:#F00;"><strong>999</strong></em></p><br />
+                    <p><a href="#">Play some more!</a></p>
+                </div>
+            </div>
+            <div class="tab">
+                <span><img src="resources/tea2.jpg" /></span>
+                <strong><a href="#" target="_blank">Dr.Reeves</a></strong>
+            </div>
+        </div>
+
+        <div class="third">
+            <div class="content third">
+                <a href="#" target="_blank"><img src="resources/trophy3.jpeg" /></a>
+                <div class="word" >
+                    <p>Wins：<em style="color:#F00;"><strong>499</strong></em></p><br />
+                    <p><a href="#">keep playing!</a></p>
+                </div>
+            </div>
+            <div class="tab">
+                <span><img src="resources/tea3.jpg" /></span>
+                <strong><a href="#" target="_blank">Dr.Pettit</a></strong>
+            </div>
+        </div>
+
+        <div class="four">
+            <div class="content four">
+                <div class="word" >
+                    <p>Wins：<em style="color:#F00;"><strong>53</strong></em></p><br />
+                    <p><a href="#">almost first three</a></p>
+                </div>
+            </div>
+            <div class="tab">
+                <span><img src="resources/tea4.jpg" /></span>
+                <strong><a href="#" target="_blank">Dr.Homer</a></strong>
+            </div>
+        </div>
+
+        <div class="file">
+            <div class="content file">
+                <div class="word" >
+                    <p>Wins：<em style="color:#F00;"><strong>39</strong></em></p><br />
+                    <p><a href="#">Almost first three</a></p>
+                </div>
+            </div>
+            <div class="tab">
+                <span><img src="resources/tea5.jpg" /></span>
+                <strong><a href="#" target="_blank">Dr.st.John</a></strong>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id = "player1" class = "player">
+    <span class="text">(White)</span>
+    <br/>
+    <br/>
+    <span class="text">Wins: </span>
+    <span class="text" id = "player1win">0</span>
+</div>
+
+<div id = "player2" class = "player">
+    <span class="text">(Black)</span>
+    <br/>
+    <br/>
+    <span class="text">Wins: </span>
+    <span class="text" id = "player2win">0</span>
+</div>
+
+
+
+
+
+        <canvas width="640" id="canvas" onmousedown="play(event)" height="640">
+        </canvas>
+
+
+    <div id="button5_div">
+        <!-- <button type="button" id="switch5" onclick="clearCanvas()">Restart the game</button> -->
+    </div>
+    <button type="button" name="black" onclick="setblack()" class="teambut" id="button1">I am black</button>
+    <button type="button" name="black" onclick="setwhite()" class="teambut" id="button2">I am white</button>
+    <h1 id="teamText">Your color is: </h1>
+    <h1 id="turnStatus">your turn: ?</h1>
+
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="resources/chess.js"></script>
+</body>
+</html>

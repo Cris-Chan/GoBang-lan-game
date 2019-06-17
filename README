@@ -1,6 +1,2 @@
 This is a web project me and a classmate made. its using express and the socket IO JS library to allow two opponents
 to go against eachother in a game of go bang over network as long as the hosted computers address is shared.
-
-NOTE:
-this was made using XAMPP and should be placed within the 'htdocs' folder.
-and the exported database is included as 'coolChat.sql'
